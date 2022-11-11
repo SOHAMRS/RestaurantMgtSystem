@@ -1,0 +1,166 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  font-family: 'Oswald', sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+
+.items{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     padding: 30px 20px;
+     grid-column-gap: 40px;
+     grid-row-gap: 40px;
+ }
+ .item img{
+     width: 400px;
+     height: 400px;
+     object-fit: cover;
+     cursor: pointer;
+     transition: 0.2s ease;
+ }
+ .item :hover{
+     transition: 1s ease;
+     transform: scale(1.04);
+ }
+ .item button{
+     padding: 5px 30px;
+     border: 1px;
+     border-color: black;
+     outline: none;
+     background-color: rgb(207, 158, 101);
+     color: black;
+     cursor: pointer;
+     border-start-end-radius: 4px;
+     font-size: 20px;
+     display: block;
+     margin: 0 auto;
+     transition: 0.2s all;
+ }
+ .item button:hover{
+     transform: scale(1.08);
+ }
+.item{
+  width: 100%;
+  height: 100%;
+
+}
+.item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+    </style>
+</head>  
+<body>
+    <section class="header">
+          <a href="#" class="first">Hotel CSE</a>
+               <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="Pay.html">Payment</a>
+                    
+               </nav>
+     </section>
+     <section class="items">
+          <div class="item">
+              <img src="menu1.jpg">
+          </div>
+          <div class="item">
+              <img src="menu2.jpg">
+          </div>
+          <div class="item">
+              <img src="menu3.jpg">
+          </div>
+          <div class="item">
+              <img src="menu4.jpg">
+          </div>
+          <div class="item">
+              <img src="menu5.jpg">
+          </div>
+          <div class="item">
+              <img src="menu6.jpg">
+          </div>
+          
+      </section>   
+    
+     
+
+</body>
+</html>

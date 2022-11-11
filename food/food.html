@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+form{
+    padding-left:500px;
+    padding-top:200px;
+}
+.h1{
+    align:center;
+}
+.submit{
+    background-color: #4CAF50;  
+    color: white;  
+    padding: 5px 20px;  
+    margin: 3px 0;  
+    border: none;  
+    cursor: pointer;  
+    width: 100%;  
+    opacity: 0.9;
+}
+.show{
+    background-color: #4CAF50;  
+    color: white;  
+    padding: 5px 20px;  
+    margin: 3px 0;  
+    border: none;  
+    cursor: pointer;  
+    width: 37%;  
+    opacity: 0.9;
+}
+
+</style>
+  <title>Order Food</title>
+</head>
+<body bgcolor="lightblue">
+ <form action="orderfood.php" method="POST">
+<h1>Register and Order Food</h1>	
+
+  <table border="2px" color="blue" >
+   <tr>
+    <td>Name :</td>
+    <td><input type="text" id="username" name="username" required></td>
+   </tr>
+   <tr>
+    <td>Password :</td>
+    <td><input type="password" id="password" name="password" required></td>
+   </tr>
+   <tr>
+    <td>Email :</td>
+    <td><input type="email" id="email" name="email" required></td>
+   </tr> 
+   <tr>
+    <td>Your Order :</td>
+    <td>
+     <select id="category" name="category" required> 
+      <option selected hidden value="">Food Category</option>
+      <option value="Veg">Veg</option>
+      <option value="Non-Veg">Non-Veg</option>
+      <option value="Chinese">Chinese</option>
+      <option value="Cold">Cold</option>
+      <option value="Punjabi">Punjabi Food</option>
+      </select>
+     <input type="phone" id="phone" name="phone" required>
+    </td>
+   </tr>
+
+   <tr>
+    <td>Table No :</td>
+    <td>
+     <select id="table" name="table" required>
+      <option selected hidden value="">Select Table No.</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>      
+    </select>
+    </td>
+   </tr>
+<tr>
+<td>
+Mobile:</td>
+<td>
+<input type="number" class="mobile" id="mobile" name="mobile" required>
+</td>
+</tr>
+   <tr>
+    <td><input type="submit" value="Submit" id="submit" name="submit" class="submit"></td>
+</form>
+</tr>
+  </table>
+ </form>
+</body>
+</html>
+
+
